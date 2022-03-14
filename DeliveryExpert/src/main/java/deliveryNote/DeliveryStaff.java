@@ -1,4 +1,4 @@
-package main.java;
+package main.java.deliveryNote;
 
 public class DeliveryStaff {
 	private String deliveryStaffName;
