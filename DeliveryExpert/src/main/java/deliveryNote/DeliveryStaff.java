@@ -24,4 +24,8 @@ public class DeliveryStaff {
 	public void setDeliveryStaffNum(String num) {
 		deliveryStaffNum = num;
 	}
+	
+	public String toString() {
+		return "Delivery Staff: " + deliveryStaffName + "," + deliveryStaffNum;
+	}
 }

@@ -2,6 +2,7 @@ package main.java.menu;
 
 import java.util.Scanner;
 
+import main.java.order.order;
 import main.java.user.User;
 import main.java.user.UserDAO;
 
@@ -11,7 +12,9 @@ public class Menu {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Welcome to DeliveryExpert system");
 		System.out.println("===============MENU===============");
-		System.out.println("1. Add user");
+		System.out.println("1. Add New User");
+		System.out.println("2. New Delivery Order");
+		System.out.println("3. Print Delivery Note");
 		System.out.print("Insert input: ");
 		int choice = Integer.parseInt(scanner.nextLine());
 		
@@ -33,6 +36,18 @@ public class Menu {
 				if(userDAO.addUser(user)) {
 					System.out.println("User has been added successfully");
 				}
+				break;
+				
+			case 2:
+			try {
+				order.main(args);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+				break;
+			case 3:
+				
 				break;
 			default:
 				break;

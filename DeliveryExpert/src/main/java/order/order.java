@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class order {
-	public static void main(String[] args)throws Exception {
+	public static void main(String[] args)throws Exception { // don't have the private public? why straight to driver
 		
 		Scanner sc=new Scanner(System.in);  
 		
