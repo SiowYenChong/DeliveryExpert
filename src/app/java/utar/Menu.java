@@ -4,10 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import main.java.order.*;
-import main.java.user.*;
-import main.java.deliveryNote.*;
-
 public class Menu {
 
 	public static void main(String[] args) {

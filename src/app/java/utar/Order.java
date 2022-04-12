@@ -1,7 +1,5 @@
 package utar;
 
-import main.java.user.*;
-
 public class Order {
 
     //orderID
@@ -76,7 +74,7 @@ public class Order {
     }
 
     public double getfinal_total() {
-        Calculation_Module calc = new Calculation_Module(item, distance, weight, sameDayDelivery, insurance);
+        Calculation calc = new Calculation(item, distance, weight, sameDayDelivery, insurance);
         double finalCharge = calc.getCharge();
 
         return finalCharge;
