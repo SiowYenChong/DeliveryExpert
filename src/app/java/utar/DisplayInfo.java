@@ -1,6 +1,4 @@
-package main.java.deliveryNote;
-import main.java.user.User;
-import main.java.order.*;
+package utar;
 
 public class DisplayInfo {
 	private Order order;
@@ -87,3 +85,4 @@ public class DisplayInfo {
 	}
 	
 }
+

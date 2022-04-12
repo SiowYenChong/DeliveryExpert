@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream:DeliveryExpert/src/main/java/DeliveryStaff.java
-package main.java;
-=======
-package main.java.order;
->>>>>>> Stashed changes:DeliveryExpert/src/main/java/order/DeliveryStaff.java
+package utar;
 
 public class DeliveryStaff {
 	private String deliveryStaffName;

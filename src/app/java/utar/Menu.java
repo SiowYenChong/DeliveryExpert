@@ -1,17 +1,12 @@
-package main.java.menu;
+package utar;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-<<<<<<< Updated upstream
-import main.java.user.User;
-import main.java.user.UserDAO;
-=======
 import main.java.order.*;
 import main.java.user.*;
 import main.java.deliveryNote.*;
->>>>>>> Stashed changes
 
 public class Menu {
 
@@ -19,13 +14,9 @@ public class Menu {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Welcome to DeliveryExpert system");
 		System.out.println("===============MENU===============");
-<<<<<<< Updated upstream
-		System.out.println("1. Add user");
-=======
 		System.out.println("1. Add New User");
 		System.out.println("2. New Delivery Order");
 		System.out.println("3. Delivery Note");
->>>>>>> Stashed changes
 		System.out.print("Insert input: ");
 		int choice = Integer.parseInt(scanner.nextLine());
 
@@ -48,8 +39,6 @@ public class Menu {
 					System.out.println("User has been added successfully");
 				}
 				break;
-<<<<<<< Updated upstream
-=======
 
 			case 2:
 
@@ -249,7 +238,6 @@ public class Menu {
 				
 
 				break;
->>>>>>> Stashed changes
 			default:
 				break;
 		}

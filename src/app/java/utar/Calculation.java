@@ -1,6 +1,6 @@
-package main.java.order;
+package utar;
 
-public class Calculation_Module {
+public class Calculation {
 
 	private String item_type;
 	private double weight;
@@ -9,7 +9,7 @@ public class Calculation_Module {
 	private boolean sameDayDelivery;
 	private boolean insurance;
 	
-	public Calculation_Module(String item_type, double distance, double weight,boolean sameDayDelivery,boolean insurance){
+	public Calculation(String item_type, double distance, double weight,boolean sameDayDelivery,boolean insurance){
 		
 		this.item_type = item_type;
 		this.distance = distance;
