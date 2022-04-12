@@ -1,6 +1,8 @@
 package com.delivery.menu;
 
 import java.util.Scanner;
+
+import com.delivery.order.order;
 import com.delivery.user.User;
 import com.delivery.user.UserDAO;
 
@@ -8,21 +10,6 @@ import com.delivery.user.UserDAO;
 //email must come with @
 //view user
 
-//11 Test cases
-/*
- * 1. Print menu
- * 2. Add user
- * 3. Add user with existing phone number
- * 4. Add user with existing email
- * 5. Add user with <10 digit phone number
- * 6. Add user with >11 digit phone number
- * 7. Add user with invalid email id
- * 8. View Users
- * 9. Menu Option (2)
- * 10. Exit Option
- * 11. Verify data after adding user
- * 
- * */
 
 public class Menu {
 	public static void printMenu() {
@@ -31,6 +18,8 @@ public class Menu {
 		System.out.println("1. Add user");
 		System.out.println("2. Menu");
 		System.out.println("3. View users");
+		System.out.println("4. New Delivery Order");
+		System.out.println("5. Print Delivery Note");
 		System.out.println("0. Exit");
 	}
 	
@@ -85,6 +74,16 @@ public class Menu {
 					break;
 				case 3:
 					userDAO.showAllUsers();
+					break;
+				case 4:
+					try {
+						order.main(args);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					break;
+				case 5:
 					break;
 				default:
 					System.out.println("Invalid option! Please try again");
