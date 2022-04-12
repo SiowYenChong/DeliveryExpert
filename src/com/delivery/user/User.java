@@ -39,7 +39,7 @@ public class User implements Serializable{
 	//source > toString
 	@Override
 	public String toString() {
-		return "UserPOJO [name=" + name + ", email=" + email + ", phoneNum=" + phoneNum + ", address=" + address + "]";
+		return name + ", " + email + ", " + phoneNum + ", " + address;
 	}
 	
 }
